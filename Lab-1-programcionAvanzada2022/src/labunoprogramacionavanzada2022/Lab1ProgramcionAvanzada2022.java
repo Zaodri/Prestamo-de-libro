@@ -243,10 +243,7 @@ public class Lab1ProgramcionAvanzada2022 {
             prestamoSancionYaNo = itrSancionYaNo.next();
             if ( !prestamoSancionYaNo.isFinalizado() )
                 prestamoSancionYaNo.setFinalizado( prestamoRevisionSancion.diasPtesSancion(fechaActual) == 0 );
-            //else
-                //prestamoSancionYaNo.setFinalizado( prestamoRevisionSancion.diasPtesSancion(prestamoRevisionSancion.getFechaDevol()) == 0 );
-            //if ( prestamoRevisionSancion.isFinalizado() )
-               //prestamoRevisionSancion.setSancion(0);
+            
         }
         
         
@@ -439,96 +436,7 @@ public class Lab1ProgramcionAvanzada2022 {
         Set<PrestamoLibro> listaPrestamos = new HashSet();
         Set<Libro> listaLibros = new HashSet();
 
-        menuDeOpciones(fechaActual, listaUsuarios, listaBibliotecarios, listaPrestamos, listaLibros);
-        
-        
-        //for (PrestamoLibro presEst : listaPrestamos) {
-        //     System.out.println(presEst);
-        //} 
-       
-       
-       //datosParaUsuarioNuevo(fechaActual);
-       
-        //System.out.println("" );
-        
-        
-//        Bibliotecario empleado = new Bibliotecario("Carlos Rojas", 21, "cll 45 c ", "313 385"); 
-//        Bibliotecario empleadoUno = new Bibliotecario("Daniela Roa", 36, "cra 55 e ", "311 090"); 
-//        Usuarios user = new Usuarios("Camilo Torres", "cll 127 89 i", "320 483");
-//        Usuarios userUno = new Usuarios("Magdalena Ortega", "cra 127 89 a", "300 483");
-//        Autor autor = new Autor("Julio Cortázar", "Argentino", "19/08/1979");
-//        //Libro libro = new Libro(156, "Comedia", "Santillana", autor.toString());
-//        
-//        PrestamoLibro prestamo =new PrestamoLibro(2, 3, LocalDate.of(2022, Month.AUGUST, 31), LocalDate.of(2022, Month.AUGUST, 31).plusDays(5));
-//        prestamo.guardarPrestamos(listaPrestamos, prestamo);
-//        PrestamoLibro prestamoUno =new PrestamoLibro(2, 5, LocalDate.of(2022, Month.AUGUST, 31), LocalDate.of(2022, Month.AUGUST, 31).plusDays(5));
-//        prestamo.guardarPrestamos(listaPrestamos, prestamoUno);
-//        //Collection <PrestamoLibro> listaPrestamos;
-//        
-//        
-//        
-//        Scanner entrada = new Scanner(System.in);
-//        Scanner entradaInt = new Scanner(System.in);
-//        
-//        System.out.println("Bibliotecarios " );
-//        System.out.println("Información: " + empleado.toString());
-//        System.out.println("Información: " + empleadoUno.toString());
-//        
-//        System.out.println("Usuarios " );
-//        System.out.println("Información: " + user.toString());
-//        System.out.println("Información: " + userUno.toString());
-//        
-//        System.out.println("Usuarios " );
-//        System.out.println("Información: " + user.toString());
-//        System.out.println("Información: " + userUno.toString());
-//        
-//        System.out.println("Prestamos " );
-//        System.out.println("Prestamo: " + prestamo.toString());
-//        //System.out.println("Información: " + userUno.toString());        
-//        
-//        System.out.println( "Fecha de mi cumpleaños: " + LocalDate.of(1972, Month.MAY, 23) );
-//        
-//        System.out.println("hola" + 
-//               (int) (Period.between(LocalDate.of(2022, Month.AUGUST, 31).plusDays(500), LocalDate.now()).getYears() * 365.25 +
-//                       Period.between(LocalDate.of(2022, Month.AUGUST, 31).plusDays(500), LocalDate.now()).getMonths() * 30.5 +
-//                Period.between(LocalDate.of(2022, Month.AUGUST, 31).plusDays(500), LocalDate.now()).getDays())   );        
-//        
-//        //Lista para los estados de prestamos que tiene el ususario
-//        
-//        
-//        listaPrestamos.add(prestamoUno);
-////        estadoPres.add(prestamo.calculoDeSancion(LocalDate.MIN, LocalDate.MIN));
-////        estadoPres.add("fresa");
-////        estadoPres.add("naranja");
-////        estadoPres.remove("pera");
-//          
-//        
-//        
-////        int idBiblioArg;
-////        String nombreBiblioArg;
-////        String direccionBiblioArg;
-////        String telefonoArg;
-////        int edad;
-//// 
-////       System.out.println("Ingrese código del bibliotecario: ");
-////       idBiblioArg = entrada.nextInt();
-////        
-////        System.out.println("ingrese la edad");
-////        edad = entradaInt.nextInt();
-////        
-////        System.out.println("Ingrese nombre de bibliotecario: ");
-////        nombreBiblioArg = entrada.nextLine();
-////       
-////        System.out.println("Ingrese  dirección del bibliotecario: ");
-////        direccionBiblioArg = entrada.nextLine(); //entradade char por teclado
-////        
-////        System.out.println("Ingrese teléfono de bibliotecario: ");
-////        telefonoArg = entrada.nextLine();
-
-        
-        
-        
-        
+        menuDeOpciones(fechaActual, listaUsuarios, listaBibliotecarios, listaPrestamos, listaLibros);     
         
     }
     
